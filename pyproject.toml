@@ -1,0 +1,27 @@
+[project]
+name = "yt-blog-creation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "crewai[litellm]>=1.15.20",
+    "crewai-tools>=1.15.20",
+    "pytubefix>=11.1.0",
+    "python-dotenv>=1.0.1",
+    "pytubefix>=11.1.0",
+    "sentence-transformers>=5.0.0",
+]
+
+[project.scripts]
+run_crew = "crew:run"
+
+[tool.uv]
+package = true
+
+[tool.crewai]
+type = "crew"
+project_id = "3e2c1967-243a-45a0-ac0c-db9dab5b92a7"
+
+[tool.setuptools]
+py-modules = ["agent", "crew", "main", "tasks", "tools"]

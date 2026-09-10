@@ -1,0 +1,3 @@
+crewai
+crewai_tools
+pytubefix>=11.1.0
